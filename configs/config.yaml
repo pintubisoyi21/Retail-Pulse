@@ -1,0 +1,35 @@
+project:
+  name: RetailPulse
+  version: "2.0"
+
+data:
+  raw_path: "data/Online_Retail.xlsx"
+  clean_path: "data/clean_retail.parquet"
+  churn_threshold_days: 90
+  test_horizon_days: 30
+
+models:
+  kmeans:
+    n_clusters: 6
+    random_state: 42
+  lstm:
+    seq_len: 30
+    hidden_dim: 64
+    num_layers: 2
+    epochs: 50
+  prophet:
+    changepoint_prior_scale: 0.05
+    country_holidays: "GB"
+  xgboost:
+    n_estimators: 300
+    max_depth: 6
+    learning_rate: 0.05
+
+inventory:
+  ordering_cost: 50.0
+  holding_cost_pct: 0.25
+  lead_time_days: 7
+  service_level_z: 1.65
+
+mlflow:
+  tracking_uri: "http://localhost:5000"

@@ -1,0 +1,14 @@
+[
+  {
+    "timestamp": "2026-06-23T19:58:15.736380",
+    "status": "success",
+    "results": {
+      "churn": {
+        "new_auc": 0.9999880269632786,
+        "old_auc": 0.9999940134816394,
+        "updated": false
+      },
+      "forecast": true
+    }
+  }
+]

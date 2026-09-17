@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+*.pth
+*.pkl
+*.parquet
+
+# Allow Parquet files required by Streamlit dashboard
+!data/clean_retail.parquet
+!data/rfm_segmented.parquet
+!data/churn_predictions.parquet
+!data/daily_sales.parquet
+!data/hybrid_forecast.parquet
+!data/inventory_recommendations.parquet
+
+mlruns/
+.env
+*.log
+data/Online_Retail.xlsx
+node_modules/
+.DS_Store
+dist/
+*.egg-info/
+.venv/
+venv/
+notebooks/lightning_logs/
